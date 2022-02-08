@@ -30,9 +30,11 @@ import { ProuductDetailsComponent } from './components/page/prouduct-details/pro
 
 import { SignUpComponent } from './components/Auth/student/sign-up/sign-up.component';
 import { RoomComponent } from './components/home/room/room.component';
+
 import { SignUpOwnerComponent } from './components/Auth/housing_owner/sign-up-owner/sign-up-owner.component';
 import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/loginowner.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RentRoomComponent } from './components/RentRoom/rent-room/rent-room.component';
 
 
 
@@ -47,6 +49,7 @@ import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/
     FooterComponent,
     HomeComponent,
     BannerComponent,
+    
 
     ProductComponent,
     AboutComponent,
@@ -64,25 +67,21 @@ import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/
     Header1Component,
     Header2Component,
     Header3Component,
-  
-  
- 
     ProuductDetailsComponent,
- 
-   
     SignUpComponent,
- 
-   
     RoomComponent,
     LoginownerComponent,
     SignUpOwnerComponent,
- 
+    RentRoomComponent,
+    
    
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
