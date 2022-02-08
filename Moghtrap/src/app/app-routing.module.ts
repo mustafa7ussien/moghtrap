@@ -10,11 +10,13 @@ import { AboutComponent } from './components/about/about.component';
 import { CheckoutComponent } from './components/page/checkout/checkout.component';
 import { CategoriesComponent } from './components/page/categories/categories.component';
 import { CardComponent } from './components/page/card/card.component';
-import { LoginComponent } from './components/page/login/login.component';
+import { LoginComponent } from './components/Auth/student/login/login.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProuductDetailsComponent } from './components/page/prouduct-details/prouduct-details.component';
 
-import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { SignUpComponent } from './components/Auth/student/sign-up/sign-up.component';
+import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/loginowner.component';
+import { SignUpOwnerComponent } from './components/Auth/housing_owner/sign-up-owner/sign-up-owner.component';
 
 const routes: Routes = [
   {path:"thirdHome",component:HomeComponent},
@@ -32,6 +34,8 @@ const routes: Routes = [
   {path:"checkout",component:CheckoutComponent},
   {path:"contact",component:ContactComponent},
   {path:"productDetails",component:ProuductDetailsComponent},
+  {path:"Loginowner",component:LoginownerComponent},
+  {path:"SignUpOwner",component:SignUpOwnerComponent},
   {path:'**' ,component:HomeComponent},
 ];
 

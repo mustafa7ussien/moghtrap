@@ -12,7 +12,7 @@ import { AboutComponent } from './components/about/about.component';
 import { PageComponent } from './components/page/page.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { LoginComponent } from './components/page/login/login.component';
+import { LoginComponent } from './components/Auth/student/login/login.component';
 import { CardComponent } from './components/page/card/card.component';
 import { CategoriesComponent } from './components/page/categories/categories.component';
 import { CheckoutComponent } from './components/page/checkout/checkout.component';
@@ -28,7 +28,12 @@ import {Header3Component} from "./components/blog/elements/header/header3.compon
 import { ProuductDetailsComponent } from './components/page/prouduct-details/prouduct-details.component';
 
 
-import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { SignUpComponent } from './components/Auth/student/sign-up/sign-up.component';
+import { RoomComponent } from './components/home/room/room.component';
+import { SignUpOwnerComponent } from './components/Auth/housing_owner/sign-up-owner/sign-up-owner.component';
+import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/loginowner.component';
+
+
 
 
 
@@ -66,6 +71,14 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
  
    
     SignUpComponent,
+ 
+   
+    RoomComponent,
+    LoginownerComponent,
+    SignUpOwnerComponent,
+ 
+   
+  
   ],
   imports: [
     BrowserModule,
