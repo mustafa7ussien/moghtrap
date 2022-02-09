@@ -17,6 +17,7 @@ import { ProuductDetailsComponent } from './components/page/prouduct-details/pro
 import { SignUpComponent } from './components/Auth/student/sign-up/sign-up.component';
 import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/loginowner.component';
 import { SignUpOwnerComponent } from './components/Auth/housing_owner/sign-up-owner/sign-up-owner.component';
+import { AdminComponent } from './components/Auth/admin/admin.component';
 
 const routes: Routes = [
   {path:"thirdHome",component:HomeComponent},
@@ -36,6 +37,8 @@ const routes: Routes = [
   {path:"productDetails",component:ProuductDetailsComponent},
   {path:"Loginowner",component:LoginownerComponent},
   {path:"SignUpOwner",component:SignUpOwnerComponent},
+  {path:"loginAdmin",component:AdminComponent},
+  
   {path:'**' ,component:HomeComponent},
 ];
 

@@ -1,9 +1,18 @@
 <article class="banner">
     <section>
-        <div class="account-banner">
-            <a routerLink="/login" routerLinkActive="active">
-                <h4>my account</h4>
+        <div class="account-banner acount">
+            <a href="">
+                <span style="color: black;" class=" dropdown-toggle font-weight-bold" data-toggle="dropdown">account</span>
+
+                <ul class="dropdown-menu">
+                    <li style="margin-left: 10%;"><a routerLink="/loginAdmin" routerLinkActive="active">Admin</a></li>
+                    <li style="margin-left: 10%;"><a routerLink="/login" routerLinkActive="active">student</a></li>
+                    <li style="margin-left: 10%;"><a routerLink="/Loginowner" routerLinkActive="active">Housing Owner</a></li>
+                    
+
+                </ul>
             </a>
+            <span style="margin: 1%;"></span>
             <div class="shopping-icon"><a routerLink="/card" routerLinkActive="active"><i class="fas fa-shopping-bag"></i></a></div>
 
         </div>

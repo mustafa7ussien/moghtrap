@@ -4,8 +4,16 @@
             <img src="../../../assets/img/logo/logo.jpg" alt="logo">
         </div>
         <div class="account-nav">
-            <a routerLink="/login" routerLinkActive="active">
-                <h4>my account</h4>
+            <a href="">
+                <span class=" dropdown-toggle font-weight-bold" data-toggle="dropdown">account</span>
+
+                <ul class="dropdown-menu">
+                    <li style="margin-left: 10%;"><a routerLink="/loginAdmin" routerLinkActive="active">Admin</a></li>
+                    <li style="margin-left: 10%;"><a routerLink="/login" routerLinkActive="active">student</a></li>
+                    <li style="margin-left: 10%;"><a routerLink="/Loginowner" routerLinkActive="active">Housing Owner</a></li>
+                    
+
+                </ul>
             </a>
             <div class="shopping-icon"><a routerLink="/card" routerLinkActive="active"><i class="fas fa-shopping-bag"></i></a></div>
         </div>
@@ -60,10 +68,21 @@
 
     </div>
 
-    <div class="account-nav-lg">
-        <a routerLink="/login" routerLinkActive="active">
-            <h4>my account</h4>
-        </a>
+    <div class="account-nav-lg acount">
+        
+            <a href="">
+                <span class=" dropdown-toggle font-weight-bold" data-toggle="dropdown">account</span>
+
+                <ul class="dropdown-menu">
+                    <li style="margin-left: 10%;"><a routerLink="/loginAdmin" routerLinkActive="active">Admin</a></li>
+                    <li style="margin-left: 10%;"><a routerLink="/login" routerLinkActive="active">student</a></li>
+                    <li style="margin-left: 10%;"><a routerLink="/Loginowner" routerLinkActive="active">Housing Owner</a></li>
+                    
+
+                </ul>
+            </a>
+            
+        
         <div class="shopping-icon"><a routerLink="/card" routerLinkActive="active"><i class="fas fa-shopping-bag"></i></a></div>
     </div>
 

@@ -35,6 +35,7 @@ import { SignUpOwnerComponent } from './components/Auth/housing_owner/sign-up-ow
 import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/loginowner.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RentRoomComponent } from './components/RentRoom/rent-room/rent-room.component';
+import { AdminComponent } from './components/Auth/admin/admin.component';
 
 
 
@@ -73,6 +74,7 @@ import { RentRoomComponent } from './components/RentRoom/rent-room/rent-room.com
     LoginownerComponent,
     SignUpOwnerComponent,
     RentRoomComponent,
+    AdminComponent,
     
    
   
