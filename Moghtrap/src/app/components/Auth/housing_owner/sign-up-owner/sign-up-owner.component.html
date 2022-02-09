@@ -1,6 +1,6 @@
 
 
-<form style="height: 750px;" action="" method="get" class="register-form-area" id="loginco">
+<form [formGroup]="registrationForm"  style="height: 750px;" action="" method="get" class="register-form-area" id="loginco">
     <div class="container" >
         <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8" >
@@ -9,24 +9,42 @@
                     <div class="register-heading">
                         <span>Sign Up</span>
                         <p>Create your account to get full access to Housing owner</p>
+                        <small> {{registrationForm.value | json}}</small>
                     </div>
                     <!-- Single Input Fields -->
                     <div class="input-box">
                         <div class="single-input-fields">
                             <label>Full name</label>
-                            <input type="text" placeholder="Enter full name">
+                            <input [class.is-invalid]="fullName.invalid &&fullName.touched"  formControlName="fullName" type="text" placeholder="Enter full name">
+                            <div *ngIf="fullName.invalid && fullName.touched">
+                                <small *ngIf="fullName.errors.required" class="text-danger">user Name fiels is requird </small>
+                                <small *ngIf="fullName.errors.minlength" class="text-danger"> user Name minlength at least 4 character</small>
+                                <small class="text-danger" *ngIf="fullName.errors.forbiddenName"> {{fullName.errors.forbiddenName.value}} user Name Not Allowed</small>
+                            </div>
+                            
                         </div>
                         <div class="single-input-fields">
                             <label>Email Address</label>
-                            <input type="email" placeholder="Enter email address">
+                            <input [class.is-invalid]="emailAddress.invalid &&emailAddress.touched"  formControlName="emailAddress" type="email" placeholder="Enter full name">
+                            <div *ngIf="emailAddress.invalid && emailAddress.touched">
+                                <small *ngIf="emailAddress.invalid &&emailAddress.touched" class="text-danger">Email Address Not Valid </small>
+                                
+                                
+                            </div>
+                            
                         </div>
+                        
+                      
                         <div class="single-input-fields">
                             <label>Password</label>
-                            <input type="password" placeholder="Enter Password">
+                            <input type="password" formControlName="password" placeholder="Enter Password">
                         </div>
                         <div class="single-input-fields">
                             <label>Confirm Password</label>
-                            <input type="password" placeholder="Confirm Password">
+                            <input [class.is-invalid]="registrationForm.errors?.misMath" type="password" formControlName="confPassword" placeholder="Confirm Password">
+                            <div *ngIf="registrationForm.errors?.misMath">
+                                 <small class="text-danger" *ngIf="registrationForm.errors.misMath" > ConfirmPassword does not Match the Password </small>
+                           </div>
                         </div>
                     </div>
                     <!-- form Footer -->

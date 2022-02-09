@@ -1,5 +1,5 @@
 <!--use directive ng form to mointor to all input-->
-<form [formGroup]="registrationForm" style="height: 750px;" action="" method="get" class="register-form-area" id="loginco" #enrollForm="ngForm">
+<form [formGroup]="registrationForm" style="height: 750px;" action="" method="get" class="register-form-area" id="loginco">
 
     <div class="container">
         <!--print all input by pipe jsone-->
@@ -21,12 +21,20 @@
                         <div class="single-input-fields">
                             <label>Full name</label>
                             <!--use trv and class bootstrap is invalid-->
-                            <input formControlName="fullName" type="text" placeholder="Enter full name" name="fullName" 
-                            >
+                            <input [class.is-invalid]="fullName.invalid &&fullName.touched"  formControlName="fullName" type="text" placeholder="Enter full name" name="fullName" >
+                            <div *ngIf="fullName.invalid && fullName.touched">
+                                <small *ngIf="fullName.errors.required" class="text-danger">user Name fiels is requird </small>
+                                <small *ngIf="fullName.errors.minlength" class="text-danger"> user Name minlength at least 4 character</small>
+                                <small class="text-danger" *ngIf="fullName.errors.forbiddenName"> {{fullName.errors.forbiddenName.value}} user Name Not Allowed</small>
+                            </div>
+                            
                         </div>
                         <div class="single-input-fields">
                             <label>Email Address</label>
-                            <input formControlName="emailAddress" type="email" placeholder="Enter email address" name="emailAddress" >
+                            <input [class.is-invalid]="emailAddress.invalid &&emailAddress.touched"  formControlName="emailAddress" type="email" placeholder="Enter email address" name="emailAddress" >
+                            <div *ngIf="emailAddress.invalid && emailAddress.touched">
+                                <small *ngIf="emailAddress.invalid &&emailAddress.touched" class="text-danger">Email Address Not Valid </small>
+                            </div>
                             
                         </div>
                         <div class="single-input-fields">
@@ -36,7 +44,10 @@
                         </div>
                         <div class="single-input-fields">
                             <label>Confirm Password</label>
-                            <input formControlName="Confpassword" type="password" placeholder="Confirm Password" name="Confpassword" >
+                            <input [class.is-invalid]="registrationForm.errors?.misMath" type="password" formControlName="confPassword" placeholder="Confirm Password" name="Confpassword" >
+                            <div *ngIf="registrationForm.errors?.misMath">
+                                <small class="text-danger" *ngIf="registrationForm.errors.misMath" > ConfirmPassword does not Match the Password </small>
+                          </div>
 
                         </div>
                     </div>
