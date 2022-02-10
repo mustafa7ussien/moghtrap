@@ -1,0 +1,7 @@
+[
+    {"id":1,"NumOfBeds":1,"Description":"High Class"},
+    {"id":2,"NumOfBeds":2,"Description":"very good"},
+    {"id":3,"NumOfBeds":3,"Description":"excellent"},
+    {"id":4,"NumOfBeds":4,"Description":"good"},
+    {"id":5,"NumOfBeds":5,"Description":"good"}
+]

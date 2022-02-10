@@ -36,6 +36,7 @@ import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RentRoomComponent } from './components/RentRoom/rent-room/rent-room.component';
 import { AdminComponent } from './components/Auth/admin/admin.component';
+import {HttpClientModule} from '@angular/common/http'
 
 
 
@@ -83,7 +84,8 @@ import { AdminComponent } from './components/Auth/admin/admin.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

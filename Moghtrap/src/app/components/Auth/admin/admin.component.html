@@ -35,7 +35,7 @@
 
                 <div class="form-group">
                     <label class="boxTitle" for="exampleInputEmail1"> Email Address</label>
-                    <input formControlName="emailAddress" [class.is-invalid]="emailAddress.invalid && emailAddress.touched" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username / Email address">
+                    <input formControlName="emailAddress" [class.is-invalid]="emailAddress.invalid && emailAddress.touched" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
                     <div *ngIf="emailAddress.invalid && emailAddress.touched">
                         <small *ngIf="emailAddress.invalid && emailAddress.touched" class="text-danger">Email Address Not Valid </small>
                     </div>
