@@ -36,7 +36,8 @@ import { LoginownerComponent } from './components/Auth/housing_owner/loginowner/
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RentRoomComponent } from './components/RentRoom/rent-room/rent-room.component';
 import { AdminComponent } from './components/Auth/admin/admin.component';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -85,7 +86,8 @@ import {HttpClientModule} from '@angular/common/http'
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
