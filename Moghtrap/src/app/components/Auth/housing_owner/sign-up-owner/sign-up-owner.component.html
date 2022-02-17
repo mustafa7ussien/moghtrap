@@ -7,9 +7,14 @@
                 <div class="register-form text-center">
                     <!-- Login Heading -->
                     <div class="register-heading">
+                        <div class="row">
+                            <div class="col-7"></div>
+                            <div class="col-3"><a class="loginsinup" style="font-size: larger;" routerLink="/SignUpOwner" routerLinkActive="active">Sign Up</a></div>
+                            <div class="col-2"> <a class="loginsinup" style="font-size: larger;" routerLink="/Loginowner" routerLinkActive="active"> Login</a></div>
+                        </div>
                         <span>Sign Up</span>
                         <p>Create your account to get full access to Housing owner</p>
-                        <small> {{registrationForm.value | json}}</small>
+                        <!-- <small> {{registrationForm.value | json}}</small> -->
                     </div>
                     <!-- Single Input Fields -->
                     <div class="input-box">
@@ -21,6 +26,16 @@
                                 <small *ngIf="fullName.errors.minlength" class="text-danger"> user Name minlength at least 4 character</small>
                                 <small class="text-danger" *ngIf="fullName.errors.forbiddenName"> {{fullName.errors.forbiddenName.value}} user Name Not Allowed</small>
                             </div>
+                            
+                        </div>
+                        <div class="single-input-fields">
+                            <label>Phone</label>
+                            <input type="number" placeholder="Enter your number" name="phone" >
+                            
+                        </div>
+                        <div class="single-input-fields">
+                            <label>Adress</label>
+                            <input type="text" placeholder="Enter your Adress" name="adress" >
                             
                         </div>
                         <div class="single-input-fields">

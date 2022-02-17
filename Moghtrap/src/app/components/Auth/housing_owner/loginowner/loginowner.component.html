@@ -24,6 +24,11 @@
 
             <form [formGroup]="registrationForm" action="" method="get">
                 <div id="toplogin">
+                    <div class="row">
+                        <div class="col-7"></div>
+                        <div class="col-3"><a class="loginsinup"  routerLink="/SignUpOwner" routerLinkActive="active">Sign Up</a></div>
+                        <div class="col-2"> <a class="loginsinup"  routerLink="/Loginowner" routerLinkActive="active"> Login</a></div>
+                    </div>
                     <h3> Login</h3>
                     <h6>Enter Login details to get access housing owner</h6>
                     <small> {{registrationForm.value | json}}</small>

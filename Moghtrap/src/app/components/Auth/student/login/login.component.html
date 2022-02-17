@@ -26,6 +26,12 @@
 
             <form [formGroup]="registrationForm" action="" method="get">
                 <div id="toplogin">
+                    <div class="row">
+                        <div class="col-7"></div>
+                         
+                        <div class="col-3"><a class="loginsinup" routerLink="/signUp" routerLinkActive="active">Sign Up</a></div>
+                        <div class="col-2"> <a class="loginsinup"  routerLink="/login" routerLinkActive="active"> Login</a></div>
+                    </div>
                     <h3> Login</h3>
                     <h6>Enter Login details to get access</h6>
                     <h6>if you housing owner please click to sign in <a routerLink="/Loginowner" routerLinkActive="active">Sign in</a> here</h6>
