@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { IRooms } from '../../Shared/interfaces/IRooms';
 import { RoomService } from '../../Shared/Services/room.service';
 
@@ -12,7 +13,7 @@ export class RoomComponent implements OnInit {
 //complext roomlist from irooms
 roomList:IRooms[]=[];
 errorMSG;
-  constructor(private roomServ:RoomService) { }
+  constructor(private roomServ:RoomService,private router:Router,private route:ActivatedRoute) { }
 
   ngOnInit(): void
    {

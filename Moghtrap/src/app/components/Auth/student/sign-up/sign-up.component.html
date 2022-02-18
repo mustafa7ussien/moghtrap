@@ -1,5 +1,5 @@
 <!--use directive ng form to mointor to all input-->
-<form [formGroup]="registrationForm" style="height: 750px;" action="" method="get" class="register-form-area" id="loginco">
+<form [formGroup]="registrationForm" (submit)="onSubmit()" style="height: 750px;" action="" method="get" class="register-form-area" id="loginco">
 
     <div class="container">
         <!--print all input by pipe jsone-->
@@ -18,6 +18,7 @@
                             <div class="col-2"> <a class="loginsinup"  routerLink="/login" routerLinkActive="active"> Login</a></div>
                         </div>
                         <span>Sign Up</span>
+                        {{roomList|json}}
                         <p>Create your account to get full access</p>
                        <!-- <small>{{userDate|json}}</small>-->
                       <!-- <small> {{registrationForm.value | json}}</small> -->
@@ -27,7 +28,7 @@
                         <div class="single-input-fields">
                             <label>Full name</label>
                             <!--use trv and class bootstrap is invalid-->
-                            <input [class.is-invalid]="fullName.invalid &&fullName.touched"  formControlName="fullName" type="text" placeholder="Enter full name" name="fullName" >
+                            <input   formControlName="name" type="text" placeholder="Enter full name" name="name" >
                             <div *ngIf="fullName.invalid && fullName.touched">
                                 <small *ngIf="fullName.errors.required" class="text-danger">user Name fiels is requird </small>
                                 <small *ngIf="fullName.errors.minlength" class="text-danger"> user Name minlength at least 4 character</small>
@@ -37,23 +38,23 @@
                         </div>
                         <div class="single-input-fields">
                             <label>Email Address</label>
-                            <input [class.is-invalid]="emailAddress.invalid &&emailAddress.touched"  formControlName="emailAddress" type="email" placeholder="Enter email address" name="emailAddress" >
+                            <input  formControlName="email" type="email" placeholder="Enter email address" name="email" >
                             <div *ngIf="emailAddress.invalid && emailAddress.touched">
                                 <small *ngIf="emailAddress.invalid &&emailAddress.touched" class="text-danger">Email Address Not Valid </small>
                             </div>
                             
                         </div>
-                        <div class="single-input-fields">
+                        <!-- <div class="single-input-fields">
                             <label>Phone</label>
                             <input type="number" placeholder="Enter your number" name="phone" >
                             
-                        </div>
-                        <div class="single-input-fields">
+                        </div> -->
+                        <!-- <div class="single-input-fields">
                             <label>Adress</label>
                             <input type="text" placeholder="Enter your Adress" name="adress" >
                             
-                        </div>
-                        <div class="single-input-fields">
+                        </div> -->
+                        <!-- <div class="single-input-fields">
                             <label >Faculty</label>
                             <select id="inputState" class="form-control">
                               <option selected>Science</option>
@@ -74,7 +75,7 @@
                               <option selected>Engineering</option>
                               
                             </select>
-                          </div>
+                          </div> -->
                         <div class="single-input-fields">
                             <label>Password</label>
                             <input formControlName="password" type="password" placeholder="Enter Password" name="password" >
@@ -82,7 +83,7 @@
                         </div>
                         <div class="single-input-fields">
                             <label>Confirm Password</label>
-                            <input [class.is-invalid]="registrationForm.errors?.misMath" type="password" formControlName="confPassword" placeholder="Confirm Password" name="Confpassword" >
+                            <input type="password" formControlName="confPassword" placeholder="Confirm Password" name="Confpassword" >
                             <div *ngIf="registrationForm.errors?.misMath">
                                 <small class="text-danger" *ngIf="registrationForm.errors.misMath" > ConfirmPassword does not Match the Password </small>
                           </div>
@@ -93,7 +94,7 @@
                     <div class="register-footer">
                         <p> Already have an account? <a routerLink="/login" routerLinkActive="active"> Login</a> here
                         </p>
-                        <button class="submit-btn3">Sign Up</button>
+                        <button type="submit"  class="submit-btn3">Sign Up</button>
                     </div>
                 </div>
             </div>
