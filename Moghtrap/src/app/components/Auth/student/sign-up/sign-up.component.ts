@@ -64,6 +64,7 @@ export class SignUpComponent implements OnInit {
       
       console.log(this.registrationForm.get('name').value);
       console.log(this.registrationForm.get('email').value);
+      this.router.navigate(['/home']);
 
   
   
