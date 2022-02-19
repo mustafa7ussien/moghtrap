@@ -21,7 +21,7 @@
                         {{roomList|json}}
                         <p>Create your account to get full access</p>
                        <!-- <small>{{userDate|json}}</small>-->
-                      <!-- <small> {{registrationForm.value | json}}</small> -->
+                      <small> {{registrationForm.value | json}}</small>
                     </div>
                     <!-- Single Input Fields -->
                     <div class="input-box">
@@ -44,19 +44,19 @@
                             </div>
                             
                         </div>
-                        <!-- <div class="single-input-fields">
+                         <div class="single-input-fields">
                             <label>Phone</label>
-                            <input type="number" placeholder="Enter your number" name="phone" >
+                            <input formControlName="number" type="number" placeholder="Enter your number" name="phone" >
                             
-                        </div> -->
-                        <!-- <div class="single-input-fields">
+                        </div> 
+                         <div class="single-input-fields">
                             <label>Adress</label>
-                            <input type="text" placeholder="Enter your Adress" name="adress" >
+                            <input formControlName="adress" type="text" placeholder="Enter your Adress" name="adress" >
                             
-                        </div> -->
-                        <!-- <div class="single-input-fields">
+                        </div> 
+                         <div class="single-input-fields">
                             <label >Faculty</label>
-                            <select id="inputState" class="form-control">
+                            <select formControlName="faculty" id="inputState" class="form-control">
                               <option selected>Science</option>
                               <option selected>Agriculture</option>
                               <option selected>Medicine</option>
@@ -75,7 +75,7 @@
                               <option selected>Engineering</option>
                               
                             </select>
-                          </div> -->
+                          </div> 
                         <div class="single-input-fields">
                             <label>Password</label>
                             <input formControlName="password" type="password" placeholder="Enter Password" name="password" >
@@ -94,10 +94,12 @@
                     <div class="register-footer">
                         <p> Already have an account? <a routerLink="/login" routerLinkActive="active"> Login</a> here
                         </p>
-                        <button type="submit"  class="submit-btn3">Sign Up</button>
+                        <button class="submit-btn3">Sign Up</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </form>
+
+<div style=" margin-top: 30% ;" ></div>

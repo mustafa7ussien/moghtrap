@@ -20,8 +20,12 @@ export class SignUpComponent implements OnInit {
   ({
     name:['',[Validators.required,Validators.minLength(4),forbiddenNameValidator(/admin/)]],
     email:['',[Validators.required,Validators.pattern(/^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/)]],
+    number:[''],
+    adress:[''],
+    faculty:[''],
     password:[''],
     confPassword:['']
+   
 
 
   },{validators:[confirmpasswordValidator]});
@@ -46,18 +50,21 @@ export class SignUpComponent implements OnInit {
 
 
   onSubmit()
-  {this.submitted=true;
-    if(this.registrationForm.invalid){return;}
-    this.authserv.register(this.registrationForm.value)
-    .pipe(first())
-    .subscribe(
-      data=>{
-        // this.roomList=data;
-        this.router.navigate(['auth/login']);
-        console.log("singn uo successufly");
-      },error=>{console.log("error post api");});
+  {
+    // this.submitted=true;
+    // if(this.registrationForm.invalid){return;}
+    // this.authserv.register(this.registrationForm.value)
+    // .pipe(first())
+    // .subscribe(
+    //   data=>{
+    //     // this.roomList=data;
+    //     this.router.navigate(['auth/login']);
+    //     console.log("singn uo successufly");
+    //   },error=>{console.log("error post api");});
       
-      
+      console.log(this.registrationForm.get('name').value);
+      console.log(this.registrationForm.get('email').value);
+
   
   
 

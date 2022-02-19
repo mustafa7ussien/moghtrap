@@ -1,35 +1,15 @@
 [
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
-    , {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
-    , {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
-    , {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
-    , {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
-    , {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
-    , {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"},
-    {"id":1,"price":400,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant"}
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1},
+    {"id":1,"num_room":5,"price":400,"price_services":100,"num_beds":3,"gender":"Female","address":"Assuit/Seed factory/Al-sabeel/st.sayed Marzouq/in front of Afandina Restaurant","housingId":1}
    
 ]
